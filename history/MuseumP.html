@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Museum & History</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Museum</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<style>
+    .sarabun-bold {
+        font-family: "Sarabun", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .sarabun-extrabold {
+        font-family: "Sarabun", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    .sarabun-bold-italic {
+        font-family: "Sarabun", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .content {
+        border: 2px;
+        padding: 20px;
+        margin: 100px;
+    }
+
+    p {
+        font-family: sans-serif;
+        font-size: medium;
+        text-indent: 5em;
+        padding-left: 6%;
+        padding-right: 10%;
+    }
+
+    h2,
+    h1 {
+        padding-top: 3%;
+        padding-bottom: 2%;
+        padding-left: 3%;
+    }
+
+    h3 {
+        padding-left: 3%;
+    }
+
+    img {
+        padding: 0.5%;
+
+    }
+
+    li {
+        font-size: large;
+
+    }
+
+    .carousel-inner .carousel-item img {
+        /* padding: 0.5%;
+        padding-left: 50px; */
+        height: 250px;
+        width: 420px;
+        object-fit: cover;
+    }
+
+
+    header {
+        background: url(img/Museum\ &\ history.png) no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        color: white;
+        height: 220px;
+    }
+
+    .textForPic {
+        padding-bottom: 1px;
+        padding-top: 100px;
+        font-family: sans-serif;
+        font-size: medium;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .Warb {
+        padding-bottom: 1px;
+        padding-top: 100px;
+        font-family: sans-serif;
+        font-size: small;
+        padding-left: 3%
+    }
+
+    .textwarb {
+        font-size: medium;
+        font-family: sans-serif;
+        padding-left: 5%;
+        padding-right: 10%;
+
+    }
+</style>
+
+<body class="rounded">
+    <div>
+        <header></header>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <div class="container-fluid">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../home/index.html">หน้าหลัก</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../cafe/cafe.html">สายคาเฟ่</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../temple/temple.html">สายบุญ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../night/party.html">สายปาร์ตี้</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../history/MuseumP.html">สายพิพิธภัณฑ์ </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="../cafe/group.html">สมาชิก</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+
+
+
+    <div class="container mt-5 text-bg-light content">
+        <br>
+        <h1 class="sarabun-extrabold" style="background-color:red; color : white ;">สถานที่พิพิธภัณฑ์และประวัติศาสตร์
+        </h1>
+        <br>
+        <center>
+            <div class="col-sm-6">
+                <img src="img/หุ่น1ร้าน.jpg" class="rounded" alt="พิพิธภัณฑ์หุ่นขี้ผึ้งไทย" width="310" height="250">
+                <img src="img/วัง1.jpg" class="rounded" alt="พระราชวังสนามจันทร์" width="320" height="250">
+            </div>
+            <div class="col-sm-6">
+                <img src="img/วู้ด1ร้าน.jpg" class="rounded" alt="วู้ดแลนด์เมืองไม้" width="310" height="250">
+                <img src="img/หอ1.jpg" class="rounded" alt="หอภาพยนตร์" width="320" height="250">
+            </div>
+            <br>
+            <br>
+        </center>
+        <div class="sarabun-extrabold col-sm-6">
+            <ol>
+                <li><a href="#C1">พิพิธภัณฑ์หุ่นขี้ผึ้งไทย</a></li>
+                <li><a href="#C2">พระราชวังสนามจันทร์</a></li>
+                <li><a href="#C3">Woodland Museum</a></li>
+                <li><a href="#C4">หอภาพยนตร์(องค์การมหาชน)</a></li>
+            </ol>
+
+        </div>
+
+        <div>
+        <h1 id="C1" style="color: rgb(10, 0, 119);" class="sarabun-bold"><b>พิพิธภัณฑ์หุ่นขี้ผึ้งไทย</b></h1>
+        <center><img src="img/หุ่น2.jpg" class="rounded" alt="หุ่นขี้ผึ้ง" width="600" height="400">
+            <img src="img/หุ่น5.jpg" class="rounded" alt="หุ่นขี้ผึ้ง" width="600" height="400">
+
+        </center>
+
+        <br>
+        <div>
+            <p style="text-indent: 5em">จากความสนใจในการสร้างหุ่นขี้ผึ้งของผู้สร้างสรรค์กลุ่มหนึ่ง
+                นำโดยอาจารย์ดวงแก้ว พิทยากรศิลป์ ทำให้มีการศึกษาค้นคว้าและทดลองเป็นเวลานานกว่า 10 ปี
+                จนสามารถสร้างหุ่นขี้ผึ้งยุคใหม่จากไฟเบอร์กลาส ที่มีความคงทน ประณีต งดงาม เหมือนคนจริงที่สุด
+                ทำให้เป็นที่มาของโครงการก่อตั้ง
+                ‘พิพิธภัณฑ์หุ่นขี้ผึ้งไทย’ ใน พ.ศ. 2525
+                สำหรับเป็นสถานที่สร้างและจัดแสดงหุ่นขี้ผึ้งไฟเบอร์กลาสเพื่อการอนุรักษ์
+                ส่งเสริม และเผยแพร่ศิลปะวัฒนธรรมประเพณีไทยอันจะเป็นประโยชน์ในการศึกษาค้นคว้าของเยาวชน </p>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-6"><img src="img/หุ่น6.jpg" class="rounded" alt="หุ่นขี้ผึ้ง" width="316" height="220"
+                    style="padding-left:50px;">
+                <img src="img/หุ่น4.jpg" class="rounded" alt="หุ่น" width="305" height="220">
+            </div>
+
+            <div class="col-5">
+                <p>อาคารพิพิธภัณฑ์หุ่นขี้ผึ้งไทยเป็นอาคารสองชั้นบริเวณชั้นล่างจัดแสดงหุ่นชุดต่างๆ เช่น
+                    ชุดพระบรมรูปอดีตพระมหากษัตริย์ราชวงศ์จักรี
+                    พระบรมรูปสมเด็จพระศรีนครินทราบรมราชชนนี ชุดพระอริยสงฆ์ ชุดมุมหนึ่งของชีวิต
+                    และพระกรณียกิจต่างๆของสมเด็จพระศรีนครินทราบรมราชชนนี</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-5">
+                <div class="textForPic">
+                    ส่วนชั้นบนจัดแสดงหุ่นชุดบุคคลสำคัญทั้งของไทยและต่างประเทศ หากนักท่องเที่ยวมีโอกาสเข้ามาชม
+                    รับรองว่าจะต้องทึ่งในความเหมือนจริง แทบทุกในรายละเอียด
+                    แต่จะเหมือนจริงแค่ไหนต้องมาพิสูจน์ด้วยตัวเอง
+                </div>
+            </div>
+
+
+            <div class="col-sm-4">
+                <div id="myCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/หุ่น1ร้าน.jpg" alt="หุ่นขี้ผึ้ง">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/หุ่น2.jpg" alt="หุ่นขี้ผึ้ง">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/หุ่น3.jpg" alt="หุ่นขี้ผึ้ง">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/หุ่น5.jpg" alt="หุ่นขี้ผึ้ง">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/หุ่น7.jpg" alt="หุ่นขี้ผึ้ง">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Warb">
+                <div class="textwarb">
+                    <b>ที่อยู่ : 43/2 หมู่ 1 ถ.ปิ่นเกล้า-นครชัยศรี ต.ขุนแก้ว อ.นครชัยศรี จ.นครปฐม
+                        <br>
+                        พิกัด : <a href="https://maps.app.goo.gl/K5cHaKr5qGyZv96E8">พิพิธภัณฑ์หุ่นขี้ผึ้งไทย</a>
+                        <br>
+                        วัน-เวลาที่เปิดให้เข้าชม: ทุกวันจันทร์-วันศุกร์ 09.00-17.30 น. วันเสาร์-วันอาทิตย์
+                        และวันหยุดนักขัตฤกษ์ เวลา 08.30 - 18.00 น.
+                        <br>
+                        ค่าเข้าชม: ชาวไทย , ผู้ใหญ่ 50 บาท เด็ก 10 บาท (พระภิกษุ สามเณร แม่ชี นักบวช
+                        นักศึกษาในเครื่องแบบ
+                        20 บาท)
+                        และชาวต่างชาติ 50 บาท
+                        <br>
+                        facebook :
+                        <a href="https://www.facebook.com/thaiwaxmuseum/?locale=th_TH">พิพิธภัณฑ์หุ่นขี้ผึ้งไทย Thai Human Imagery museum</a>
+                        <br>
+                        โทรศัพท์ : 03-433-2607, 03-433-2109
+                </div></b>
+                <br>
+                <div>
+                    ที่มา :https://www.nakhonpathom.go.th/travel_top10/detail/9
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <br>
+        <div>
+        <div>
+            <h1 id="C2" style="color: rgb(10, 0, 119);"><b>พระราชวังสนามจันทร์</b></h1>
+            <center>
+                <img src="img/วัง1.jpg" class="rounded" alt="วังสนามจันทร์" width="600" height="400">
+            </center>
+            <br>
+            <div>
+                <p style="text-indent: 5em">สร้างขึ้นโดยพระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว รัชกาลที่ 6
+                    หลังจากพระองค์สวรรคตพระราชวังสนามจันทร์ใช้เป็นที่ทำการของส่วนราชการต่าง ๆ
+                    ของจังหวัดนครปฐมรวมทั้งเป็นวิทยาเขตหนึ่งของมหาวิทยาลัยศิลปากร</p>
+
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4"  style="padding-left: 5%">
+                    <div id="myCarousel1" class="carousel slide " data-bs-ride="carousel" data-bs-interval="4000" >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/วัง3.jpg" alt="วัง">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วัง7.jpg" alt="วัง">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วัง9.jpg" alt="วัง">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วัง10.jpg" alt="วัง">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div>
+                        <p>เมื่อก่อนนั้นในหลวงรัชกาลที่ 6
+                            ขณะที่ดำรงพระราชอิสริยยศยังเป็นสมเด็จพระบรมโอรสาธิราชสยามมกุฏราชกุมารก็ได้ทรงรับพระราชภาระจากในหลวงรัชกาลที่
+                            5 ว่าให้ปูกระเบื้องประดับองค์พระปฐมเจดีย์ทำให้ทรงมีความคุ้นเคยกับบริเวณแถวนี้
+                            และทรงตระหนักถึงคุณค่าทางประวัติศาสตร์และศิลปวัฒนธรรมของเมืองนครปฐม</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="textForPic">
+                        ในการเข้าชมพระตำหนักด้านใน คือ ห้ามถ่ายภาพ
+                        เพราะภายในนั้นจะมีการจัดเป็นห้องแสดงบรรยากาศในสมัยรัชกาลที่
+                        6 มีเสื้อผ้าเครื่องแต่งกายในยุคนั้น ถือเป็นหลักฐานทางประวัติศาสตร์ด้านวัฒนธรรมอย่างนึง
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="myCarousel2" class="carousel slide " data-bs-ride="carousel" data-bs-interval="4000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/วัง11.jpg" alt="วัง">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วัง6.jpg" alt="วัง">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วัง2.jpg" alt="วัง">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วัง4.jpg" alt="วัง">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วัง5.jpg" alt="วัง">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วัง8.jpg" alt="วัง">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </p>
+
+                <div class="Warb">
+                    <div class="textwarb">
+                        <b>ที่อยู่ : พระราชวังสนามจันทร์ ตำบลสนามจันทร์ อำเภอเมืองนครปฐม จังหวัดนครปฐม
+                            <br>
+                            พิกัด : <a href="https://goo.gl/maps/pHvhGGUM73Lez1hL6">พระราชวังสนามจันทร์</a>
+                            <br>
+                            วัน-เวลาที่เปิดให้เข้าชม : ปิดปรับปรุง
+                            <br>
+                            ค่าเข้าชม : คนไทย ผู้ใหญ่ 30 บาท เด็ก 10 บาท, ชาวต่างชาติ 50 บาท
+                            <br>
+                            โทรศัพท์ : 03-424-4236
+                    </div></b>
+                    <br>
+                    <div>
+                        ที่มา: https://travel.trueid.net/detail/N9OnrPbkZod
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            <br>
+        <div>
+            <div>
+                <h1 id="C3" style="color: rgb(10, 0, 119);"><b>Woodland Museum</b></h1>
+                <center><img src="img/วู้ด1ร้าน.jpg" class="rounded" alt="Woodland" width="600" height="400"></center>
+                <br>
+
+                <div">
+                    <p style="text-indent: 5em">
+                        วู้ดแลนด์เมืองไม้แฟนตาซี(Woodland)เป็นพิพิธภัณฑ์ที่จัดแสดงผลงานไม้แกะสลักมากมาย
+                        สร้างโดยครอบครัวทิวไผ่งาม ทั้งหมดล้วนแล้วแต่เป็นผลงานที่สวยงดงามและทรงคุณค่ามากๆ
+                        ที่สำคัญหาชมได้ยากสุดๆ</p>
+                        <br>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"  style="padding-left: 5%">
+                    <div id="myCarousel3" class="carousel slide " data-bs-ride="carousel" data-bs-interval="4000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/วู้ด3.jpg" alt=";วู้ดแลนด์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วู้ด4.jpg" alt=";วู้ดแลนด์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วู้ด5.jpg" alt=";วู้ดแลนด์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วู้ด2.jpg" alt=";วู้ดแลนด์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วู้ด6.jpg" alt=";วู้ดแลนด์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/วู้ด7.jpg" alt=";วู้ดแลนด์">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="textForPic">
+                        โดยภายในจะแบ่งออกเป็น 10 ห้อง ไม่ว่าจะเป็น หมู่บ้านไทย นิทานเมืองไม้ รีสอร์ทไม้ เป็นต้น
+                        โดยรอบของพิพิธภัณฑ์จะเป็นสวนสีเขียวและมีบริเวณอยู่ติดกับแม่น้ำท่าจีน บรรยากาศชิลสุดๆ
+                        เหมาะกับนักท่องเที่ยวสายศิลปะ ชื่นชอบความงามด้านศิลป์ ต้องบอกว่าแค่ทางเข้าก็ทำให้ขนลุก
+                        และรู้สึกได้ถึงผลงานที่ยิ่งใหญ่ของข้างใน
+                    </div>
+                </div>
+            </div>
+
+            <div class="Warb">
+                <div class="textwarb">
+                    <b>ที่อยู่ :  15/1 หมู่ 4 ตำบลดอนแฝก อำเภอนครชัยศรี จังหวัดนครปฐม
+                        <br>
+                        พิกัด : <a href="https://goo.gl/maps/dexycEH2Aqq64qUf7">วู้ดแลนด์เมืองไม้</a>
+                        <br>
+                        เปิดให้เข้าชม : 09.30-17.00 น.
+                        <br>
+                        ค่าเข้าชม : คนไทย ผู้ใหญ่ 300 บาท เด็ก 100 บาท , ต่างชาติ ผู้ใหญ่ 650 บาท เด็ก 300
+                        บาท
+                        <br>
+                        โทร : 03-426-5330
+                        <br>
+                        facebook :
+                        <a href="https://www.facebook.com/woodlandmuangmai/">WoodLandMuangMai</a>
+                </div></b>
+
+                <br>
+                <div>
+                    ที่มา: https://travel.trueid.net/detail/qpYkazbmQbBv
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div>
+        <div>
+            <h1 id="C4" style="color: rgb(10, 0, 119);"><b>หอภาพยนตร์(องค์การมหาชน)</b></h1>
+            <center>
+                <img src="img/หอ1.jpg" class="rounded" alt="หอภาพยนตร์" width="600" height="400">
+            </center>
+            <br>
+
+            <div>
+                <p style="text-indent: 5em">หอภาพยนตร์
+                    เป็นสถานที่ที่รวบรวมพิพิธภัณฑ์หอศิลป์และหอสมุดเข้าไว้ด้วยกันเพื่อเก็บรวบรวมและเล่าเรื่องราวของภาพยนตร์และวีดีทัศน์ตลอดกระบวนการอนุรักษ์มรดกทางวัฒนธรรมไว้ให้คนรุ่นหลังได้ศึกษาต่อไป
+                    โดยมีการเปรียบเปรยว่า</p>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="img/หอ2.jpg" class="rounded" alt="หอภาพยนตร์" width="400"
+                                height="220" style="padding-left:50px;">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6">
+                    <div>
+
+                        <p>“ภาพยนตร์เปรียบเสมือนศาสนาหภาพยนตร์ก็คือวัด ซึ่งมีโรงหนังเป็นโบสถ์
+                            มีพิพิธภัณฑ์เป็นวิหารหรือเจดีย์
+                            มีห้องเย็นเก็บรักษาฟิลม์เป็นหอไตร มีศูนย์ให้บริการค้นคว้าเป็นศาลาการเปรียญ
+                            โดยตราของหอภาพยนตร์
+                            คือ
+                            ธรรมจักรภาพยนตร์ ซึ่งหมุนวนไปเพื่อเผยแผ่สัจธรรม สำหรับมวลมนุษย์”
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="textForPic">
+
+                        <p>ภายในบริเวณหอภาพยนตร์
+                            จำลองบรรยากาศของเมืองเมืองหนึ่งที่รวบรวมสถานที่สำคัญที่เกี่ยวกับการทำหนัง
+                            มาไว้ในบริเวณเดียวกัน ผสมผสานอาคารต่างๆในรูปแบบสถาปัตยกรรมตะวันออกและตะวันตก
+                            แบ่งออกเป็น
+                            พิพิธภัณฑ์ภาพยนตร์ไทย เมืองมายา โรงภาพยนตร์ศรีศาลายา ห้องสมุดและโสตทัศนสถาน เชิด
+                            ทรงศรี
+                            และนิทรรศการกลางแจ้ง
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="myCarousel4" class="carousel slide " data-bs-ride="carousel" data-bs-interval="4000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/หอ4.jpg" alt="หอภาพยนตร์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/หอ5.jpg" alt="หอภาพยนตร์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/หอ3.jpg" alt="หอภาพยนตร์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/หอ6.jpg" alt="หอภาพยนตร์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/หอ7.jpg" alt="หอภาพยนตร์">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/หอ8.jpg" alt="หอภาพยนตร์">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </p>
+
+
+                <div>
+                    <p>รับรองว่าคุณจะได้เพลินเพลิดกับความสวยงามและสมจริงของเบื้องหน้าฉากถ่ายทำภาพยนตร์
+                        อีกทั้งยังได้รับความรู้จากห้องนิทรรศการที่แฝงตัวอยู่ตามฉากต่างๆ รอให้คุณไปค้นพบ
+                    </p>
+                </div>
+
+                <div class="Warb">
+                    <div class="textwarb">
+                        <b>
+                            ที่อยู่: 94 หมู่ 3 ถนนพุทธมณฑล สาย 5 ต.ศาลายา อ.พุทธมณฑล นครปฐม 73170
+                            <br>
+                            พิกัด:
+                            <a href="https://maps.app.goo.gl/JTVeRrbFFQ2XxfAp6">หอภาพยนตร์ Thai Film Archive</a>
+                            <br>
+                            เวลาเปิดบริการ: ทุกวันเสาร์-อาทิตย์ และวันหยุดนักขัตฤกษ์ ตั้งแต่เวลา 10.00-17.00 น.
+                            <br>
+                            Facebook:
+                            <a href="https://m.facebook.com/ThaiFilmArchivePage/">หอภาพยนตร์ Thai Film Archive</a>
+
+                            <br>
+                            โทรศัพท์: 02-482-2013</b>
+                    </div>
+                    <br>
+                    <div>ที่มา:https://room.baanlaesuan.com/60147/commercial/film-archive-public-organization</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <br>
+        
+        <div class="mt-5 p-4 bg-dark text-white text-center">
+            <div class="row">
+                <div class="col-sm-12 col-12 mb-3">
+                    <h4><b>"From Cafés to Nature: Nakhon Pathom Has It All"</b></h4>
+                    <p>New place, new coffee, new memories. Wherever you're headed, make this a stop to remember.</p>
+                </div>
+                <div class="col-sm-12 col-12">
+                    <div>
+                        <h6><i class="fas fa-user"></i> Contact group : <a href="../cafe/group.html" class="group-link">MAI
+                                BOK</a></h6>
+                    </div>
+                    <div style="text-align: right;">
+                        <button type="button" class="btn btnoutlining-info bg-light btn-md"> <a
+                                href="../home/index.html">Home</a></button>
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+</html>
